@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 300px;
+	height: 300px;
+	padding-top: 50px;
+}
+
+#field {
+	display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	font-size: 5em;
+  text-align: center;
+  transition: background-color 0.5s ease-out;
+}
+
+.square:hover {
+	background-color: #c3c3c3;
+}
+
+.taken {
+	pointer-events: none;
+}
+
+#info {
+	margin-top: 2em;
+	text-align: center;
+	font-size: 2em;
+}
+
+#reset-wrapper {
+	margin-top: 2em;
+	text-align: center;
+}
+
+#reset-btn {
+	font-size: 2em;
+}
+
+#field .square:nth-child(1) {
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+}
+
+#field .square:nth-child(2) {
+	border-bottom: 2px solid black;
+}
+
+#field .square:nth-child(3) {
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+}
+
+#field .square:nth-child(4) {
+	border-right: 2px solid black;
+}
+
+#field .square:nth-child(6) {
+	border-left: 2px solid black;
+}
+
+#field .square:nth-child(7) {
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+}
+
+#field .square:nth-child(8) {
+	border-top: 2px solid black;
+}
+
+#field .square:nth-child(9) {
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+}
